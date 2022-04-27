@@ -6,34 +6,59 @@
     text-decoration: none;
 }
 
-body{
-    background: #E0E1dF;
-    padding: 40px;
+body{   }
+
+
+.section-1{
+   z-index: 100;
+   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+   
 }
 
-
-
-.logo{
-    width: 100px;
-    
-
-    
+.heading{
+   font-size: 80px;
+   position: relative;
+   top: 45%;
+   text-align: center;
 }
+.shop-now-btn{
+   font-size: 16px;
+   text-transform: uppercase;
+   font-family: GT Pressura Mono,Roboto Mono,monospace;
+    color: black;
+    border: 2px solid #bfc5c7;
+    padding: 9px 20px 7px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
 
-.navgrid {
+
+}
+ .navgrid {
+   
+   transform: translate(0px, -130px);
     display: grid; 
     justify-items: stretch;
     align-items: stretch;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 100px;
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    background-color: #cacbc7;
-    padding: 1px;
-    border-radius: 0px;
-    font-size: 16px;
+    border: 1px solid #bfc5c7;
+    position: relative;
+    top: 0%;
     
+    
+    font-size: 16px;
     
     
  }
@@ -42,60 +67,83 @@ body{
     align-content: center;  /* this line aligns content vertically (up and down) */
     justify-content: center; /* this line aligns content horizontally (left anmd right) */
     display: grid;
-    background-color: #5D75DF; 
-    grid-row-start: 1;
-    grid-column-start: 1;
- 
-    grid-row-end: 3;
-    grid-column-end: 3;
+   grid-row-start: 1;
+   grid-column-start: 1;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 3;
+   grid-column-end: 3;;
     
  }
+ #item-0 .logo{
+   width: 100%;
+  
+}
  #item-1 {
-    
-    background-color: #C7DCE7; 
-    grid-row-start: 1;
-    grid-column-start: 3;
- 
-    grid-row-end: 2;
-    grid-column-end: 5;
+   align-content: center;  /* this line aligns content vertically (up and down) */
+    justify-content: center; /* this line aligns content horizontally (left anmd right) */
+   grid-row-start: 1;
+   grid-column-start: 3;
+   max-width: 100%;
+   overflow:hidden ;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 3;
+   grid-column-end: 5;
+   
     
  }
- #item-1 .tea_link{
+ #item-1 .background{
     text-transform: uppercase;
     font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: black;
-    
- }
- #item-2 {
- 
-    background-color: #9CCD95; 
-    grid-row-start: 2;
-    grid-column-start: 3;
- 
-    grid-row-end: 3;
-    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center
     
  }
 
- #item-2 .merch_link{
+ #item-1 .background .p{
+   
+   
+ 
+}
+
+ #item-2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 1;
+   grid-column-start: 5;
+   max-width: 100%;
+   overflow: hidden;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 2;
+   grid-column-end: 7;
+    
+ }
+
+ #item-2 .tea_link{
     text-transform: uppercase;
     font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: black;
+    
  }
 
  #item-3 {
- 
-    background-color: #797B7B; 
-    grid-row-start: 1;
-    grid-column-start: 5;
- 
-    grid-row-end: 2;
-    grid-column-end: 7;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   grid-row-start: 2;
+   grid-column-start: 5;
+   max-width: 100%;
+   overflow: hidden;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 3;
+   grid-column-end: 7;
     
  }
 
  
- #item-3 .brew_link{
+ #item-3 .merch_link{
     text-transform: uppercase;
     font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: black;
@@ -103,53 +151,82 @@ body{
  }
 
  #item-4 {
- 
-    background-color: #9AF7B5; 
-    grid-row-start: 1;
-    grid-column-start: 7;
- 
-    grid-row-end: 2;
-    grid-column-end: 9;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 1;
+   grid-column-start: 7;
+   max-width: 100%;
+   overflow: hidden;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 2;
+   grid-column-end: 9;
     
  }
 
- #item-4 .about_link{
+ #item-4 .brew_link{
     text-transform: uppercase;
     font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: black;
 
  }
  #item-5 {
- 
-    background-color: #9C7CE6; 
-    grid-row-start: 2;
-    grid-column-start: 5;
- 
-    grid-row-end: 3;
-    grid-column-end: 7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 2;
+   grid-column-start: 7;
+   max-width: 100%;
+   overflow: hidden;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 3;
+   grid-column-end: 9;
     
  }
 
- #item-5 .cart_link {
+ #item-5 .about_link {
     text-transform: uppercase;
     font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: black;
 
  }
  #item-6 {
- 
-    background-color: #5DC5A6; 
-    grid-row-start: 2;
-    grid-column-start: 7;
- 
-    grid-row-end: 3;
-    grid-column-end: 9;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   grid-row-start: 1;
+   grid-column-start: 9;
+   max-width: 100%;
+   overflow: hidden;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 2;
+   grid-column-end: 11;
     
  }
 
- #item-6 .wholesale_link{
+ #item-6 .cart_link{
     text-transform: uppercase;
     font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: black;
 
  }
+
+ #item-7{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 2;
+   grid-column-start: 9;
+   max-width: 100%;
+   overflow: hidden;
+   border: 1px solid #bfc5c7;
+   grid-row-end: 3;
+   grid-column-end: 11;
+ }
+
+ #item-7 .wholesale_link{
+   text-transform: uppercase;
+   font-family: GT Pressura Mono,Roboto Mono,monospace;
+   color: black;
+
+}
