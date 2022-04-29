@@ -1,4 +1,5 @@
 /* use # for sclecting IDs and use . for classes */
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ body{
 
 .section-1{
    z-index: 100;
-   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&);
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -24,7 +25,23 @@ body{
    padding-left: 30px;
    padding-right: 30px;
    padding-top: 30px;
+   animation: slideBg 8s linear infinite 0s;
+   animation-timing-function: ease-in-out;
    
+}
+
+@keyframes slideBg  {
+   0% {
+      background-image:url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&)
+   }
+
+   33% {
+      background-image:url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/swatch-hero_2400x.jpg?v=1558564563&auto=format&q=50&)
+   }
+
+   100% {
+      background-image:url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&)
+   }
 }
 
 .heading{
