@@ -435,6 +435,7 @@ body{
    padding-left: 10%;
    padding-right: 10%;
    margin: auto;
+   grid-gap: 5%;
 
 }
   
@@ -452,6 +453,7 @@ body{
    background-size: contain;
    max-width:auto;
    max-height:auto;
+
 
    
    
