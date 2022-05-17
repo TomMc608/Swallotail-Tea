@@ -7,21 +7,19 @@ const image_to_display = document.querySelector('.image_to_display');
 get_image_button.addEventListener('click', async () => {
 
     fetch(URL)
-    .then(function (response){
-
+    .then(response => response.json())
+    .then(data => {
         console.log("show me the data");
-        console.log(response)
-        console.log("i am an android, lieutenant data");
-        
-        return response.json();
-        
-    })
-    .then(function (jsonData) {
-
-        image_to_display.src = jsonData.results.urls.raw;
-
+        ;
+        data["results"].forEach(result => {
+            image_to_display.src = (result["urls"]["regular"])
+            console.log(data)
+            console.log("i am an android, lieutenant data")
+        })
     })
 
+        
+        
 })
 
 
