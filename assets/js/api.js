@@ -8,18 +8,17 @@ get_image_button.addEventListener('click', async () => {
 
     fetch(URL)
     .then(function (response){
+
         console.log("show me the data");
         console.log(response)
         console.log("i am an android, lieutenant data");
+        
         return response.json();
         
     })
     .then(function (jsonData) {
-        
-        image_to_display.src = jsonData.url;
 
-
-        
+        image_to_display.src = jsonData.results.urls.raw;
 
     })
 
