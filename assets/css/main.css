@@ -559,3 +559,37 @@ body{
     font-size: 20px;
 
 }
+
+.section-3{
+   position: relative;
+   background-color: white;
+   height: 800px;
+   top: 959px;
+}
+
+.Join{
+   position: relative;
+   z-index: 300;
+   height: 100px;
+   padding: 30px;
+   background-color: #F5F5F1;
+   
+}
+
+.join-btn{
+   position: absolute;
+   font-size: 16px;
+   text-transform: uppercase;
+   font-family: GT Pressura Mono,Roboto Mono,monospace;
+    color: black;
+    border: 2px solid #bfc5c7;
+    padding: 9px 20px 7px ;
+    font-weight: bold;
+    margin-left: 50%;
+
+
+    width: fit-content;
+    align-items: center;
+   
+   
+}
