@@ -58,7 +58,7 @@ body{
    font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: black;
     border: 2px solid #bfc5c7;
-    padding: 9px 20px 7px;
+    padding: 9px 20px 7px ;
     font-weight: bold;
     margin-bottom: auto;
     width: fit-content;
@@ -76,6 +76,9 @@ body{
     border: 1px solid #bfc5c7;
     font-size: 16px;
     width: 70%;
+    margin-bottom: auto;
+    
+    
     
     
     

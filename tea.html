@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tea.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tea_grid">
+
+    </div>
+
+    <script>
+
+      
+
+       
+            let tea_grid = document.querySelector(".tea_grid");
+            for(let i = 1; i <= 10; i++){
+            fetch("https://api.unsplash.com/search/photos/?query=tea-leaves&client_id=QSz12piqsEZKwy7mseJIbTRYnc6SD1WgF91DNS7wp70")
+                .then(res => res.json())
+                .then(data => {
+                let randomNumber = Math.floor(Math.random() * 10); 
+                let images = data.results[randomNumber];
+                console.log(images.urls.regular)
+                let randomImage = images.urls.regular;
+
+                let tea = document.createElement("div");
+                tea.classList.add("tea")
+
+                let image = document.createElement("div");
+                image.classList.add("image")
+                image.style.backgroundImage = `url(${randomImage})`;
+                tea.append(image)
+
+                tea_grid.append(tea)
+                
+                });
+            };
+
+
+    </script>
+</body>
+
+</html>
