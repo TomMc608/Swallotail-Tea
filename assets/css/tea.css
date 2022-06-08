@@ -1,7 +1,7 @@
-.tea-grid {
+.tea_grid {
     
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 5fr);
     gap: 30px;
     width: fit-content;
     border-radius: 10px;

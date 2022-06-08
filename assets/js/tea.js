@@ -1,5 +1,5 @@
 let tea_grid = document.querySelector(".tea_grid");
-for(let i = 1; i <= 10; i++){
+for(let i = 1; i <= 17; i++){
 fetch("https://api.unsplash.com/search/photos/?query=tea-leaves&client_id=QSz12piqsEZKwy7mseJIbTRYnc6SD1WgF91DNS7wp70")
     .then(res => res.json())
     .then(data => {
