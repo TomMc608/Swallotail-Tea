@@ -8,17 +8,39 @@
   
 .tea_grid {
     
-    padding-top: 150px;
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
-    
     margin: auto; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 170px;
       
 
 }
 
+@media only screen and (max-width:800px){
+    .tea_grid {
+    
+    
+        
+        grid-template-columns: repeat(2, 1fr); 
+        
+        
+        padding-left: 20px;
+        padding-right: 20px;
+        
+          
+    
+    }
 
+    .tea{
+        max-height: 200px;
+        width: auto;
+    }
+    
+}
 
 .tea {
     
@@ -32,12 +54,14 @@
     flex-direction: column;
     object-fit: cover;
     margin: auto;
+    
 }
 
 .image {
     background-repeat: no-repeat;
     margin: 10px;
     height: 100%;
+    width: auto;
     background-size: cover;
     background-position: center;
     
