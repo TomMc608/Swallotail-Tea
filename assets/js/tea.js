@@ -1,4 +1,4 @@
-let tea_grid = document.querySelector(".tea_grid");
+let tea_grid = document.querySelector('.tea_grid'); 
 for(let i = 1; i <= 17; i++){
 fetch("https://api.unsplash.com/search/photos/?query=tea-leaves&client_id=QSz12piqsEZKwy7mseJIbTRYnc6SD1WgF91DNS7wp70")
     .then(res => res.json())
@@ -9,13 +9,13 @@ fetch("https://api.unsplash.com/search/photos/?query=tea-leaves&client_id=QSz12p
     let randomImage = images.urls.full;
 
     let tea = document.createElement("div");
-    tea.classList.add("tea")
+    tea.classList.add("tea");
 
     let image = document.createElement("div");
-    image.classList.add("image")
+    image.classList.add("image");
     image.style.backgroundImage = `url(${randomImage})`;
     tea.append(image)
-
+    console.log(tea)
     tea_grid.append(tea)
 
 

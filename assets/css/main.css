@@ -73,13 +73,13 @@ body{
    
    
     display: grid; 
-    
+    outline: 2px solid #bfc5c7;
     grid-template-rows: 1fr 1fr ;
     grid-template-columns: (10, 1fr) ; /*might need to take out*/
     height: 100px;
-    border: 1px solid #bfc5c7;
     font-size: 16px;
     width: 70%;
+
  
  }
 
@@ -91,7 +91,8 @@ body{
     display: grid;
    grid-row-start: 1;
    grid-column-start: 1;
-   border: 1px solid #bfc5c7;
+   border-right:2px solid #bfc5c7;
+    
    grid-row-end: 3;
    grid-column-end: 3;;
     
@@ -109,7 +110,8 @@ body{
    overflow:hidden ;
    grid-row-end: 3;
    grid-column-end: 5;
-   border: 1px solid #bfc5c7;
+   border-right:2px solid #bfc5c7 ;
+   
    
    
     
@@ -133,7 +135,8 @@ body{
    grid-column-start: 5;
    max-width: 100%;
    overflow: hidden;
-   border: 1px solid #bfc5c7;
+   border-right:2px solid #bfc5c7;
+   border-bottom:2px solid #bfc5c7; 
    grid-row-end: 2;
    grid-column-end: 7;
     
@@ -156,7 +159,7 @@ body{
    grid-column-start: 5;
    max-width: 100%;
    overflow: hidden;
-   border: 1px solid #bfc5c7;
+   border-right:2px solid #bfc5c7;
    grid-row-end: 3;
    grid-column-end: 7;
     
@@ -180,7 +183,8 @@ body{
    grid-column-start: 7;
    max-width: 100%;
    overflow: hidden;
-   border: 1px solid #bfc5c7;
+   border-right:2px solid #bfc5c7;
+   border-bottom:2px solid #bfc5c7; ;
    grid-row-end: 2;
    grid-column-end: 9;
     
@@ -202,7 +206,7 @@ body{
    grid-column-start: 7;
    max-width: 100%;
    overflow: hidden;
-   border: 1px solid #bfc5c7;
+   border-right:2px solid #bfc5c7; 
    grid-row-end: 3;
    grid-column-end: 9;
     
@@ -224,7 +228,7 @@ body{
    grid-column-start: 9;
    max-width: 100%;
    overflow: hidden;
-   border: 1px solid #bfc5c7;
+   border-bottom:2px solid #bfc5c7; 
    grid-row-end: 2;
    grid-column-end: 11;
     
@@ -247,7 +251,7 @@ body{
    grid-column-start: 9;
    max-width: 100%;
    overflow: hidden;
-   border: 1px solid #bfc5c7;
+
    grid-row-end: 3;
    grid-column-end: 11;
  }
@@ -282,10 +286,8 @@ body{
    position: relative;
    
 }
-  
-#image-0 {
 
-   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/black_ad4be5cb-6a95-484a-bb94-2239b1a929ec_400x400_crop_center.png?v=1526857313&auto=format&q=50&); 
+.tea_image{
    background-position: center;
    background-repeat: no-repeat;
     max-width:auto;
@@ -297,9 +299,15 @@ body{
    grid-column-end: 2;
    justify-content: center;
    align-items: center;
+}
+  
+#image-0 {
+
+   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/black_ad4be5cb-6a95-484a-bb94-2239b1a929ec_400x400_crop_center.png?v=1526857313&auto=format&q=50&); 
+  
    
 }
-#image-0 .black-tea-link{
+.tea-link{
    text-transform: uppercase;
     font-family: GT Pressura Mono,Roboto Mono,monospace;
     color: white;

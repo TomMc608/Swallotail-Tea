@@ -1,0 +1,1 @@
+exports.index = (req, res) => res.render('tea',{title:"My Shop"})
