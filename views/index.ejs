@@ -1,51 +1,167 @@
-
-    <link rel="stylesheet" href="css/main.css" />
-    
+<link rel="stylesheet" href="css/main.css" />
 
 
-    <div class="section-1">
-      <%- include ('partials/nav') %>
-      <div class="heading">Bring Swallowtail Home</div>
-      <div class="shop-now-btn">Shop Now</div>
-      
+
+<div class="section-1">
+  <%- include ('partials/nav') %>
+    <div class="heading">Bring Swallowtail Home</div>
+    <div class="shop-now-btn">Shop Now</div>
+
+</div>
+
+<div class="section-2">
+  <div class="five-tea-images">
+
+    <% let tea_types=["black", "green" , "white" , "tisanes" , "blends" ]; %>
+
+      <% for(let i=0;i<5;i++){ %>
+        <%- include('partials/tea', {i:i,tea_type:tea_types[i]}) %>
+          <% } %>
+
+  </div>
+
+  <div class="shop-now-grid">
+    <div id="shop-grid-0">
+      <h1 class="shop-now-0">shop now</h1>
+      <h1 class="title-0">teas</h1>
     </div>
 
-    <div class="section-2">
-      <div class="five-tea-images">
-
-        <% let tea_types = ["black", "green", "white", "tisanes", "blends"]; %>
-
-        <% for(let i=0;i<5;i++){ %>
-          <%- include('partials/tea', {i:i,tea_type:tea_types[i]}) %>
-        <% } %>
-
-      </div>
-
-      <div class="shop-now-grid">
-        <div id="shop-grid-0">
-          <h1 class="shop-now-0">shop now</h1>
-          <h1 class="title-0">teas</h1>
-        </div>
-
-        <div id="shop-grid-1">
-          <h1 class="shop-now-1">shop now</h1>
-          <h1 class="title-1">mearch</h1>
-        </div>
-
-        <div id="shop-grid-2">
-          <h1 class="shop-now-2">shop now</h1>
-          <h1 class="title-2">wares</h1>
-        </div>
-      </div>
+    <div id="shop-grid-1">
+      <h1 class="shop-now-1">shop now</h1>
+      <h1 class="title-1">mearch</h1>
     </div>
 
-    <div class="section-3">
-      <div class="Join">
-       <div class="join-btn">Join</div>
- 
+    <div id="shop-grid-2">
+      <h1 class="shop-now-2">shop now</h1>
+      <h1 class="title-2">wares</h1>
+    </div>
+  </div>
+</div>
+
+<div class="section-3">
+  <div class="join-right-side">
+
+    <div class="join-btn">Join</div>
+    <h3 class="text-join-left">Sign up and get 10% off your first purchase.</h3>
+    <form class="form" action="/">
+      <input class="input" placeholder="Your email address..." type="email" name="EMAIL">
+    </form>
+  </div>
+
+  <div class="join-left-side">
+
+    <h2 class="heading_section_3">Swallowtail Tea</h2>
+    <h3 class="description">Swallowtail Tea is a Virginia-based tea company sourcing only the highest quality tea,
+      herbs, and spices from around the world.</h3>
+
+  </div>
+
+</div>
+
+
+<div class="section-4">
+  <div class="section-4-grid-container">
+    <div class="row mb2">
+
+      <div class="col c3">
+        <h3 class="uppercase">Shop</h3>
+      </div>
+
+      <div class="col c3">
+        <h3 class="uppercase">Company</h3>
+      </div>
+
+      <div class="col c3">
+        <h3 class="uppercase">Account</h3>
+      </div>
+
+      <div class="col c3">
+        <h3 class="uppercase">Legal</h3>
+      </div>
+
+      <div class="col c3">
+        <h3 class="uppercase">Terms of Service</h3>
+      </div>
+
+      <div class="col c3">
+        <h3 class="uppercase">Refund policy</h3>
       </div>
 
     </div>
- <script src="js/main.js"></script>
-   
+    <hr>
 
+    <div class="row mt2">
+
+      <div class="col c3">
+        <ul>
+
+          <li><a class="link--hover" href="/">All</a></li>
+
+          <li><a class="link--hover" href="/">Teas</a></li>
+
+          <li><a class="link--hover" href="/">Merch</a></li>
+
+          <li><a class="link--hover" href="/">Brew Wares</a></li>
+
+
+        </ul>
+      </div>
+
+      <div class="col c3">
+        <ul>
+
+          <li><a class="link--hover" href="/">Wholesale</a></li>
+
+          <li><a class="link--hover" href="/">About Us</a></li>
+
+          <li><a class="link--hover" href="/">Contact Us</a></li>
+
+          <li><a class="link--hover" href="/">FAQs</a></li>
+
+
+        </ul>
+      </div>
+
+      <div class="col c3">
+        <ul>
+
+          <li><a class="link--hover" href="/">My Orders</a></li>
+
+          <li><a class="link--hover" href="/">Sign Up</a></li>
+
+
+        </ul>
+      </div>
+
+      <div class="col c3">
+        <ul>
+
+          <li><a class="link--hover" href="/">Terms &amp; Conditions</a></li>
+
+          <li><a class="link--hover" href="/">Privacy Policy</a></li>
+
+
+        </ul>
+      </div>
+
+      <div class="col c3">
+        <ul>
+
+
+        </ul>
+      </div>
+
+      <div class="col c3">
+        <ul>
+
+
+          <li><span class="line-break db"></span><span></span></li>
+          <li class="o50">(c) 2022 Swallowtail Tea</li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>

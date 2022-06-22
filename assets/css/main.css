@@ -1,19 +1,20 @@
 /* use # for sclecting IDs and use . for classes */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: GT Pressura Mono, Roboto Mono, monospace;
 }
 
-body{ 
+body {
    max-height: 100%;
    width: auto;
-  }
+}
 
 
-.section-1{
+.section-1 {
    z-index: 100;
    background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&);
    background-position: center;
@@ -30,243 +31,264 @@ body{
    display: flex;
    flex-direction: column;
    align-items: center;
-   
+
 }
 
-@keyframes slideBg  {
+@keyframes slideBg {
    0% {
-      background-image:url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&)
+      background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_gywan_2400x.jpg?v=1551770466&auto=format&q=50&)
    }
 
    33% {
-      background-image:url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/swatch-hero_2400x.jpg?v=1558564563&auto=format&q=50&)
+      background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/swatch-hero_2400x.jpg?v=1558564563&auto=format&q=50&)
    }
 
    100% {
-      background-image:url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&)
+      background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&)
    }
 }
 
 
 
-.heading{
+.heading {
    font-size: 80px;
    text-align: center;
-   
+   font-family: Louize Display, Garamond, serif;
    margin-top: 15%;
 }
-.shop-now-btn{
+
+.shop-now-btn {
    font-size: 16px;
    text-transform: uppercase;
-   font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    border: 2px solid #bfc5c7;
-    padding: 9px 20px 7px ;
-    font-weight: bold;
-    margin-bottom: auto;
-    width: fit-content;
+   color: black;
+   border: 2px solid #bfc5c7;
+   padding: 9px 20px 7px;
+   font-weight: bold;
+   margin-bottom: auto;
+   width: fit-content;
 
 
 }
 
- .navgrid {
-   
-   
-    display: grid; 
-    outline: 2px solid #bfc5c7;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-columns: (10, 1fr) ; /*might need to take out*/
-    height: 100px;
-    font-size: 16px;
-    width: 70%;
-
- 
- }
+.navgrid {
 
 
-   
- #item-0 {
-    align-content: center;  /* this line aligns content vertically (up and down) */
-    justify-content: center; /* this line aligns content horizontally (left anmd right) */
-    display: grid;
+   display: grid;
+   outline: 2px solid #bfc5c7;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: (10, 1fr);
+   /*might need to take out*/
+   height: 100px;
+   font-size: 16px;
+   width: 70%;
+
+
+}
+
+
+
+#item-0 {
+   align-content: center;
+   /* this line aligns content vertically (up and down) */
+   justify-content: center;
+   /* this line aligns content horizontally (left anmd right) */
+   display: grid;
    grid-row-start: 1;
    grid-column-start: 1;
-   border-right:2px solid #bfc5c7;
-    
+   border-right: 2px solid #bfc5c7;
+
    grid-row-end: 3;
-   grid-column-end: 3;;
-    
- }
- #item-0 .logo{
-   width: 100%;
-  
+   grid-column-end: 3;
+   ;
+
 }
- #item-1 {
-   align-content: center;  /* this line aligns content vertically (up and down) */
-   justify-content: center; /* this line aligns content horizontally (left anmd right) */
+
+#item-0 .logo {
+   width: 100%;
+
+}
+
+#item-1 {
+   align-content: center;
+   /* this line aligns content vertically (up and down) */
+   justify-content: center;
+   /* this line aligns content horizontally (left anmd right) */
    grid-row-start: 1;
    grid-column-start: 3;
    max-width: 100%;
-   overflow:hidden ;
+   overflow: hidden;
    grid-row-end: 3;
    grid-column-end: 5;
-   border-right:2px solid #bfc5c7 ;
-   
-   
-   
-    
- }
- #item-1 .background{
-    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    
- }
+   border-right: 2px solid #bfc5c7;
+   list-style-type: upper-roman;
+   line-height: 24px;
 
 
 
- #item-2 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   grid-row-start: 1;
-   grid-column-start: 5;
-   max-width: 100%;
-   overflow: hidden;
-   border-right:2px solid #bfc5c7;
-   border-bottom:2px solid #bfc5c7; 
-   grid-row-end: 2;
-   grid-column-end: 7;
-    
- }
 
- #item-2 .tea_link{
-    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    
- }
 
- #item-3 {
-   display: flex;
-   justify-content: center;
-   align-items: center; 
-   grid-row-start: 2;
-   grid-column-start: 5;
-   max-width: 100%;
-   overflow: hidden;
-   border-right:2px solid #bfc5c7;
-   grid-row-end: 3;
-   grid-column-end: 7;
-    
- }
 
- 
- #item-3 .merch_link{
-    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    text-align: center;
-    font-size: 20px;
 
- }
 
- #item-4 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   grid-row-start: 1;
-   grid-column-start: 7;
-   max-width: 100%;
-   overflow: hidden;
-   border-right:2px solid #bfc5c7;
-   border-bottom:2px solid #bfc5c7; ;
-   grid-row-end: 2;
-   grid-column-end: 9;
-    
- }
 
- #item-4 .brew_link{
-    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-
- }
- #item-5 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   grid-row-start: 2;
-   grid-column-start: 7;
-   max-width: 100%;
-   overflow: hidden;
-   border-right:2px solid #bfc5c7; 
-   grid-row-end: 3;
-   grid-column-end: 9;
-    
- }
-
- #item-5 .about_link {
-    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-
- }
- #item-6 {
-   display: flex;
-   justify-content: center;
-   align-items: center; 
-   grid-row-start: 1;
-   grid-column-start: 9;
-   max-width: 100%;
-   overflow: hidden;
-   border-bottom:2px solid #bfc5c7; 
-   grid-row-end: 2;
-   grid-column-end: 11;
-    
- }
-
- #item-6 .cart_link{
-    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-
- }
-
- #item-7{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   grid-row-start: 2;
-   grid-column-start: 9;
-   max-width: 100%;
-   overflow: hidden;
-
-   grid-row-end: 3;
-   grid-column-end: 11;
- }
-
- #item-7 .wholesale_link{
-   text-transform: uppercase;
-   font-family: GT Pressura Mono,Roboto Mono,monospace;
-   color: black;
-   text-align: center;
-    font-size: 20px;
 
 }
-.section-2{
+
+#item-1 .background {
+   text-transform: uppercase;
+
+   color: black;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+
+
+#item-2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 1;
+   grid-column-start: 5;
+   max-width: 100%;
+   overflow: hidden;
+   border-right: 2px solid #bfc5c7;
+   border-bottom: 2px solid #bfc5c7;
+   grid-row-end: 2;
+   grid-column-end: 7;
+
+}
+
+#item-2 .tea_link {
+   text-transform: uppercase;
+
+   color: black;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+#item-3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 2;
+   grid-column-start: 5;
+   max-width: 100%;
+   overflow: hidden;
+   border-right: 2px solid #bfc5c7;
+   grid-row-end: 3;
+   grid-column-end: 7;
+
+}
+
+
+#item-3 .merch_link {
+   text-transform: uppercase;
+
+   color: black;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+#item-4 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 1;
+   grid-column-start: 7;
+   max-width: 100%;
+   overflow: hidden;
+   border-right: 2px solid #bfc5c7;
+   border-bottom: 2px solid #bfc5c7;
+   ;
+   grid-row-end: 2;
+   grid-column-end: 9;
+
+}
+
+#item-4 .brew_link {
+   text-transform: uppercase;
+
+   color: black;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+#item-5 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 2;
+   grid-column-start: 7;
+   max-width: 100%;
+   overflow: hidden;
+   border-right: 2px solid #bfc5c7;
+   grid-row-end: 3;
+   grid-column-end: 9;
+
+}
+
+#item-5 .about_link {
+   text-transform: uppercase;
+
+   color: black;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+#item-6 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 1;
+   grid-column-start: 9;
+   max-width: 100%;
+   overflow: hidden;
+   border-bottom: 2px solid #bfc5c7;
+   grid-row-end: 2;
+   grid-column-end: 11;
+
+}
+
+#item-6 .cart_link {
+   text-transform: uppercase;
+
+   color: black;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+#item-7 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-row-start: 2;
+   grid-column-start: 9;
+   max-width: 100%;
+   overflow: hidden;
+
+   grid-row-end: 3;
+   grid-column-end: 11;
+}
+
+#item-7 .wholesale_link {
+   text-transform: uppercase;
+
+   color: black;
+   text-align: center;
+   font-size: 20px;
+
+}
+
+.section-2 {
    position: relative;
-   
+
    height: 900px;
    top: 959px;
 }
@@ -274,7 +296,7 @@ body{
 .five-tea-images {
    display: grid;
    grid-template-rows: 1fr;
-   grid-template-columns: (5, 1fr );
+   grid-template-columns: (5, 1fr);
    max-width: 1800px;
    max-height: 300px;
    height: 100%;
@@ -282,162 +304,153 @@ body{
    padding-bottom: 40px;
    padding-top: 40px;
    margin: auto;
-   grid-column-gap:5px ;
+   grid-column-gap: 5px;
    position: relative;
-   
+
+
+
 }
 
-.tea_image{
-   background-position: center;
-   background-repeat: no-repeat;
-    max-width:auto;
-   max-height:auto;
-   background-size: contain;
+.tea_image {
+
    grid-row-start: 1;
    grid-column-start: 1;
    grid-row-end: 2;
    grid-column-end: 2;
-   justify-content: center;
-   align-items: center;
-}
-  
-#image-0 {
 
-   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/black_ad4be5cb-6a95-484a-bb94-2239b1a929ec_400x400_crop_center.png?v=1526857313&auto=format&q=50&); 
-  
-   
 }
-.tea-link{
+
+.image {
+   background-position: center;
+   position: relative;
+   max-width: auto;
+   max-height: auto;
+   display: block;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.image-0 {
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/black_ad4be5cb-6a95-484a-bb94-2239b1a929ec_400x400_crop_center.png?v=1526857313&auto=format&q=50&);
+}
+
+.tea-link {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    text-align: center;
-    top: 50%;;
-    font-size: 20px;
-}
-#image-1 {
 
-   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/green_185f8bdd-cab4-49e0-bedf-b28cdf516b0a_400x400_crop_center.png?v=1526857011&auto=format&q=50&); 
+   color: white;
+   position: relative;
+   text-align: center;
+   top: 50%;
+   ;
+   font-size: 20px;
+   background-position: center;
+   background-repeat: no-repeat;
+   max-width: auto;
+   max-height: auto
+}
+
+.image-1 {
+
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/green_185f8bdd-cab4-49e0-bedf-b28cdf516b0a_400x400_crop_center.png?v=1526857011&auto=format&q=50&);
    grid-row-end: 2;
    grid-column-end: 3;
    grid-row-start: 1;
    grid-column-start: 2;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   background-size: auto;
-   background-size: contain;
-   max-width:auto;
-   max-height:auto
-   
 
-
-
-
-   
 
 }
 
-#image-1 .green-tea-link{
+.image-1 .green-tea-link {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    text-align: center;;
-    top: 50%;;
-    font-size: 20px;
-}
-#image-2 {
 
-   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_759d97b9-d4b2-48d2-882f-0d1b9ccff0ab_400x400_crop_center.png?v=1526857136&auto=format&q=50&); 
-    grid-row-end: 2;
+   color: white;
+   position: relative;
+   text-align: center;
+   ;
+   top: 50%;
+   ;
+   font-size: 20px;
+}
+
+.image-2 {
+
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_759d97b9-d4b2-48d2-882f-0d1b9ccff0ab_400x400_crop_center.png?v=1526857136&auto=format&q=50&);
+   grid-row-end: 2;
    grid-column-end: 4;
    grid-row-start: 1;
    grid-column-start: 3;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   background-size: auto;
-   background-size: contain;
-   max-width:auto;
-   max-height:auto
-  
 
 
 
-   
+
+
+
 }
 
-#image-2 .white-tea-link{
+.image-2 .white-tea-link {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    text-align: center;;
-    top: 50%;;
-    font-size: 20px;
-}
-#image-3 {
 
-   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_759d97b9-d4b2-48d2-882f-0d1b9ccff0ab_400x400_crop_center.png?v=1526857136&auto=format&q=50&); 
+   color: white;
+   position: relative;
+   text-align: center;
+   ;
+   top: 50%;
+   ;
+   font-size: 20px;
+}
+
+.image-3 {
+
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/white_759d97b9-d4b2-48d2-882f-0d1b9ccff0ab_400x400_crop_center.png?v=1526857136&auto=format&q=50&);
    grid-row-end: 2;
    grid-column-end: 5;
    grid-row-start: 1;
    grid-column-start: 4;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   background-size: auto;
-   background-size: contain;
-   max-width:auto;
-   max-height:auto
-   
+
+
 }
 
-#image-3 .tisanes-tea-link{
+.image-3 .tisanes-tea-link {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    text-align: center;;
-    top: 50%;;
-    font-size: 20px;
+
+   color: white;
+   position: relative;
+   text-align: center;
+   ;
+   top: 50%;
+   ;
+   font-size: 20px;
 }
 
-#image-4 {
+.image-4 {
 
-   background: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/blend_400x400_crop_center.png?v=1526857239&auto=format&q=50&); 
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/blend_400x400_crop_center.png?v=1526857239&auto=format&q=50&);
    grid-row-end: 2;
    grid-column-end: 6;
    grid-row-start: 1;
    grid-column-start: 5;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   background-size: auto;
-   background-size: contain;
-   max-width:auto;
-   max-height:auto
-   
-   
+
+
+
 }
 
-#image-4 .blends-tea-link{
+.image-4 .blends-tea-link {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    text-align: center;;
-    top: 50%;;
-    font-size: 20px;
+
+   color: white;
+   position: relative;
+   text-align: center;
+   
+   top: 50%;
+   ;
+   font-size: 20px;
 
 }
 
 
 
 .shop-now-grid {
-   display: grid; 
+   display: grid;
    position: relative;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr;
@@ -450,10 +463,10 @@ body{
    grid-column-gap: 5%;
 
 }
-  
+
 #shop-grid-0 {
 
-   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/about_values_f13f2034-9acd-41df-a7a3-2cae150c79ac_650x.jpg?v=1526915323&auto=format&q=50&); 
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/about_values_f13f2034-9acd-41df-a7a3-2cae150c79ac_650x.jpg?v=1526915323&auto=format&q=50&);
    grid-row-start: 1;
    grid-column-start: 1;
    grid-row-end: 2;
@@ -462,33 +475,36 @@ body{
    background-repeat: no-repeat;
    position: relative;
    background-size: auto;
-   background-size: cover; /* cover is up and down contain is width */
-   max-width:auto;
-   max-height:auto;
- 
+   background-size: cover;
+   /* cover is up and down contain is width */
+   max-width: auto;
+   max-height: auto;
 
-   
+
+
 }
 
 #shop-grid-0 .shop-now-0 {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    top: 60%;
-    text-align: center;
-    font-size: 20px;
+
+   color: white;
+   position: relative;
+   top: 60%;
+   text-align: center;
+   font-size: 20px;
 
 }
 
 #shop-grid-0 .title-0 {
-    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    text-align: center;;
-    top: 50%;;
-    font-size: 20px;
+   text-transform: uppercase;
+
+   color: white;
+   position: relative;
+   text-align: center;
+   ;
+   top: 50%;
+   ;
+   font-size: 20px;
 
 }
 
@@ -504,36 +520,36 @@ body{
    position: relative;
    background-size: auto;
    background-size: cover;
-   max-width:auto;
-   max-height:auto;
-   
+   max-width: auto;
+   max-height: auto;
+
 }
 
 #shop-grid-1 .shop-now-1 {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    top: 60%;
-    text-align: center;
-    font-size: 20px;
+
+   color: white;
+   position: relative;
+   top: 60%;
+   text-align: center;
+   font-size: 20px;
 
 }
 
 #shop-grid-1 .title-1 {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    top: 50%;
-    text-align: center;
-    font-size: 20px;
+
+   color: white;
+   position: relative;
+   top: 50%;
+   text-align: center;
+   font-size: 20px;
 
 }
 
 #shop-grid-2 {
 
-   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&); 
+   background-image: url(https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&);
    grid-row-start: 1;
    grid-column-start: 3;
    grid-row-end: 2;
@@ -543,64 +559,138 @@ body{
    background-size: auto;
    position: relative;
    background-size: cover;
-   max-width:auto;
-   max-height:auto;
-   
-   
+   max-width: auto;
+   max-height: auto;
+
+
 }
 
 #shop-grid-2 .shop-now-2 {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    top: 60%;
-    text-align: center;
-    font-size: 20px;
+
+   color: white;
+   position: relative;
+   top: 60%;
+   text-align: center;
+   font-size: 20px;
 
 }
 
 #shop-grid-2 .title-2 {
    text-transform: uppercase;
-    font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: white;
-    position:relative;
-    top: 50%;
-    text-align: center;
-    font-size: 20px;
+
+   color: white;
+   position: relative;
+   top: 50%;
+   text-align: center;
+   font-size: 20px;
 
 }
 
-.section-3{
+.section-3 {
    position: relative;
    background-color: white;
-   height: 800px;
+   height: 600px;
    top: 959px;
+   text-align: center;
 }
 
-.Join{
-   position: relative;
-   z-index: 300;
-   height: 100px;
-   padding: 30px;
-   background-color: #F5F5F1;
-   
-}
 
-.join-btn{
-   position: absolute;
+
+.join-btn {
+
+   height: 45px;
    font-size: 16px;
    text-transform: uppercase;
-   font-family: GT Pressura Mono,Roboto Mono,monospace;
-    color: black;
-    border: 2px solid #bfc5c7;
-    padding: 9px 20px 7px ;
-    font-weight: bold;
-    margin-left: 50%;
+
+   text-align: center;
+
+   border-radius: 2px;
+   padding: 9px 20px 7px;
+   color: #373f3d;
+   border: 2px solid rgba(55, 63, 61, .2);
 
 
-    width: fit-content;
-    align-items: center;
-   
-   
 }
+
+.section-3 .heading_section_3 {
+   font-size: 20px;
+   position: absolute;
+   bottom: 70%;
+
+}
+
+.description {
+   position: absolute;
+   color: #6e6e6e;
+
+
+}
+
+.join-right-side {
+   background-color: #c9c8c8;
+   position: absolute;
+   height: 300px;
+   padding: 30px;
+   margin-left: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+}
+
+.Join-left-side {
+   position: absolute;
+   height: 300px;
+   padding: 30px;
+   background-color: #F5F5F1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+
+}
+
+.text-join-left {
+   color: black;
+   text-align: center;
+
+
+}
+
+input[type=email] {
+    border-color: black;
+   border-width: 2px;
+   background-color: #c9c8c8;
+   box-sizing: border-box;
+   
+
+
+   list-style: none;
+   direction: ltr;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   display: block;
+   width: 100%;
+   appearance: none;
+   background: none;
+   border: none;
+   color: #373f3d;
+   font-family: GT Pressura Mono,Roboto Mono,monospace;
+   font-size: 28px;
+   line-height: 28px;
+   font-weight: 400;
+
+}
+
+.section-4 {
+   position: relative;
+   background-color: red;
+   width: auto;
+   height: 400px;
+   top: 650px;
+}
+
+
+.section-4-grid-container {}
