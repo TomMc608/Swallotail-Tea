@@ -17,8 +17,11 @@ fetch("https://api.unsplash.com/search/photos/?query=tea-leaves&client_id=QSz12p
     tea.append(image)
     console.log(tea)
     tea_grid.append(tea)
-
-
-    
     });
 };
+
+
+//So this funtion will featch photos from the unsplash api then pick a random number
+//then it will go down all the data pulled from the api and pick the images urls based on the random number
+// Then it puts that link as a background image by a url and display it on the page. 
+//This will happen for only 17 images. 

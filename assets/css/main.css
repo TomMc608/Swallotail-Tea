@@ -86,7 +86,6 @@ body {
    max-width: 1800px;
    max-height: 300px;
    height: 100%;
-
    padding-bottom: 40px;
    padding-top: 40px;
    margin: auto;
@@ -130,8 +129,7 @@ body {
    font-size: 20px;
    background-position: center;
    background-repeat: no-repeat;
-   max-width: auto;
-   max-height: auto
+
 }
 
 .image-1 {
@@ -222,7 +220,10 @@ body {
    padding-right: 10%;
    margin: auto;
    grid-column-gap: 5%;
-
+ background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   
 }
 
 #shop-grid-0 {
@@ -232,14 +233,7 @@ body {
    grid-column-start: 1;
    grid-row-end: 2;
    grid-column-end: 2;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   background-size: auto;
    background-size: cover;
-   /* cover is up and down contain is width */
-   max-width: auto;
-   max-height: auto;
 
 
 
@@ -272,13 +266,7 @@ body {
    grid-column-start: 2;
    grid-row-end: 2;
    grid-column-end: 3;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   background-size: auto;
    background-size: cover;
-   max-width: auto;
-   max-height: auto;
 
 }
 
@@ -307,13 +295,8 @@ body {
    grid-column-start: 3;
    grid-row-end: 2;
    grid-column-end: 4;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: auto;
-   position: relative;
    background-size: cover;
-   max-width: auto;
-   max-height: auto;
+  
 }
 
 #shop-grid-2 .shop-now-2 {

@@ -1,1 +1,1 @@
-exports.index = (req, res) => res.render('index',{title:"My Website"})
+exports.index = (req, res) => res.render('index',{title:"Swallowtail Tea"})
