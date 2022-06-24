@@ -14,7 +14,7 @@ get_image_button.addEventListener('click', async () => {
 })
 
 
-function getNewImage() {
+const getNewImage = () => {
     let randomNumber = Math.floor(Math.random() * 10);
     return fetch(URL)
       .then((response) => response.json())

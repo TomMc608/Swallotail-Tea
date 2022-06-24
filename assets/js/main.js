@@ -2,7 +2,7 @@ let slideIndex = 0;
 showSlides();
 
 //This will cycle though the images in the html and have a slide
-function showSlides() {
+const showSlides = () => {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
