@@ -23,25 +23,5 @@ function getNewImage() {
         return allImages.urls.regular;
       });
   }
-
-
-
-
-
-
 //get a random number between 1 and 10 get the data and wait 
 //then one it has the data use the random number to pick an image
-
-
-
-/* fetch(URL)
-    .then(response => response.json())
-    .then(data => {
-        console.log("show me the data");
-        
-        data["results"].forEach(result => {
-            image_to_display.src = (result["urls"]["regular"])
-            console.log(data)
-            console.log("i am an android, lieutenant data")
-        })
-    }) */
