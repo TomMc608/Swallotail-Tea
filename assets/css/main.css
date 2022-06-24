@@ -374,115 +374,96 @@ body {
 }
 
 .section-3 {
-   position: relative;
-   background-color: white;
-   height: 600px;
-   top: 959px;
-   text-align: center;
+   display:flex;
+   justify-content: space-between;
+}
+.join-left-side , .join-right-side {
+width : 50%;
+height: 300px;
 }
 
-
+.section-3 {
+position: relative;
+background-color: white;
+height: 600px;
+top: 959px;
+text-align: center;
+}
 
 .join-btn {
+height: 45px;
+font-size: 16px;
+text-transform: uppercase;
 
-   height: 45px;
-   font-size: 16px;
-   text-transform: uppercase;
+text-align: center;
 
-   text-align: center;
-
-   border-radius: 2px;
-   padding: 9px 20px 7px;
-   color: #373f3d;
-   border: 2px solid rgba(55, 63, 61, .2);
+border-radius: 2px;
+padding: 9px 20px 7px;
+color: #373f3d;
+border: 2px solid rgba(55, 63, 61, .2);
 
 
 }
 
 .section-3 .heading_section_3 {
-   font-size: 20px;
-   position: absolute;
-   bottom: 70%;
-  
+font-size: 20px;
+
 
 }
 
 .description {
-   position: absolute;
-   color: #6e6e6e;
-   padding-left: 200px;
-   padding-right: 200px;
+color: #6e6e6e;
 
 
 }
 
 .join-right-side {
-   overflow:auto;
-   background-color: #c9c8c8;
-   position: absolute;
-   height: 300px;
-   padding: 30px;
-   margin-left: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 50%;
+background-color: #c9c8c8;
+height: 300px;
+padding: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
 }
 
-.Join-left-side {
-   overflow:auto;
-   position: relative;
-   height: 300px;
-   padding: 30px;
-   background-color: #F5F5F1;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 50%;
-
+.join-left-side {
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
-.text-join-left {
-   color: black;
-   text-align: center;
-   
-   position: relative;
-
-
-}
 .form{
-   height: fit-content;
-   overflow: hidden;
-   align-items: center;
-   justify-content: center;
-margin-top:200px ;
-margin-right: 300px;
-position: relative;
-   
+height: fit-content;
+overflow: hidden;
+
 }
 
 input[type=email] {
-   
-    border-color: black;
-   border-width: 2px;
-   background-color: #c9c8c8;
-   box-sizing: border-box;
 
-   list-style: none;
-   direction: ltr;
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
-   display: block;
-   width: 100%;
-   appearance: none;
-   background: none;
-   border: none;
-   color: #373f3d;
-   font-family: GT Pressura Mono,Roboto Mono,monospace;
-   font-size: 28px;
-   line-height: 28px;
-   font-weight: 400;
+border-color: black;
+border-width: 2px;
+background-color: #c9c8c8;
+box-sizing: border-box;
+
+
+
+list-style: none;
+direction: ltr;
+box-sizing: border-box;
+padding: 0;
+margin: 200px 200px 0px 0px;
+display: block;
+width: 100%;
+appearance: none;
+background: none;
+border: none;
+color: #373f3d;
+font-family: GT Pressura Mono,Roboto Mono,monospace;
+font-size: 28px;
+line-height: 28px;
+font-weight: 400;
 
 }
 
